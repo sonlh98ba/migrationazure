@@ -126,3 +126,6 @@ You will need to install the following locally:
 | *Azure Function App*   |   Consumption   |    $0.00         |
 | *Azure Storage*   |   Standard      |       $21.15       |
 ## Architecture Explanation
+- The Web App is the best choice because it easy to scale and handle load balancing when users spike high.
+- The Function App is very easy to extend and it have no timeout exceptions when the admin sends out notifications.
+- This architecture it is an economical choice and very reasonable price for users.
