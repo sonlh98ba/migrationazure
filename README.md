@@ -29,9 +29,9 @@ You will need to install the following locally:
     bash postgresql.sh
     ```
 2. Open pgAdmin, connect to the Azure PostgreSql server, restore the database from [techconfdb_backup.tar]. 
-    ![](output/add_azure_server_1.png)
-    ![](output/add_azure_server_2.png)
-    ![](output/restore.png)
+    ![](output/add_azure_server_1.PNG)
+    ![](output/add_azure_server_2.PNG)
+    ![](output/restore.PNG)
 3. Initiate the Azure Functions and update the [__init__.py] file to customize the function. Refactor the post logic in `web/app/routes.py -> notification()` using servicebus `queue_client`.  
 
    ```bash
@@ -57,7 +57,7 @@ You will need to install the following locally:
     ```
 
 6. Update "AzureWebJobsStorage", "AzureWebJobsServiceBus" and "SENDGRID_API_KEY" in local.settings.json and the function app configuration from the Azure portal. 
-    ![](output/funcapp_config.png)
+    ![](output/funcapp_config.PNG)
     Update "queueName" and "connection" in function.json. 
 
     Update the following in the `config.py` file: 
