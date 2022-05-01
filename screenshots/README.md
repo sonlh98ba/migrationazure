@@ -1,4 +1,4 @@
-## Screenshots
+## Additional screenshots
 
 The following screenshots should be taken and uploaded to this **screenshots** folder:
 
