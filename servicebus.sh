@@ -19,21 +19,5 @@ az servicebus queue create \
 --name $quque \
 --enable-partitioning true
 
-# get the primary connection string for the namespace
-connectionString=$(az servicebus namespace authorization-rule keys list \
---resource-group $resourceGroup \
---namespace-name $serviceBus \
---name RootManageSharedAccessKey \
---query primaryConnectionString \
---output tsv)
-
-echo $connectionString
-
-# # Create a storage account
-# az storage account create \
-# --name $storageAccount \
-# --resource-group $resourceGroup \
-# --location $location
-
 
 
